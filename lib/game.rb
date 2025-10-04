@@ -90,17 +90,13 @@ class Game
       if response == 'y'
         load_game
         puts 'Game loaded!'
-        play_round
       elsif response == 'n'
         puts 'Starting new game...'
-        play_round
       else
         puts 'Invalid response. Starting new game..'
-        play_round
       end
-    else
-      play_round
     end
+    play_round
   end
 
   def check_loss
