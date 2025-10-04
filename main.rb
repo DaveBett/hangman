@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'lib/game'
+require 'json'
 
 game = Game.new
-game.play_round
+game.ask_load
